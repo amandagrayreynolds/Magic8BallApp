@@ -2,26 +2,21 @@
 <html ng-app="magicApp">
 <head>
     <title>Magic 8 Ball Tells You...</title>
-
-
-</head>
-<body>
-    <header> MAGIC 8 BALL APP </header>
-    <div ng-view="">
-   
-    </div>
-<!-- </div>  -->
-
-  
-
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-route.min.js"></script>
     <script src="script.js"></script>
     <script src="getController.js"></script>
     <script src="returnController.js"></script>
+    <script src="answerController.js"></script>
     <script src="factory.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="title">
 
-
+            </header>
+    <div ng-view="">
+   
+    </div>
 </body>
 </html>

@@ -1,8 +1,8 @@
  <div id="questionPage" ng-contoller="getController">
- <input type="text" ng-model="questionAsked"/>
+ <input type="text" ng-model="questionAsked" id="form" placeholder="Ask Me Anything"/>
     <nav>
-       <button ng-click="save()">
-        <a href="#/answer" class ="nav">Get My Answer</a>
-       </button>
+       <a href="#/answer" id="answerNav"> <button ng-click="save()" id="button">
+        Get My Answer   </button></a>
+    
     </nav>
   </div>

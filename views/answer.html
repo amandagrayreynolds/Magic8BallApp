@@ -1,12 +1,15 @@
-<div id="askedQuestion" ng-controller="returnController">
-<div> Hi </div>
-{{displayAnswer}}
-</div>
-<div id="answer">
-<li ng-repeat="answers in finalAnswer"> {{answers}} </li>
-</div> 
-<nav>
-   <a href="#/" class ="nav">Ask Another</a>
-   	</nav>
+<div id="answerPage">
 
- </div>
+<div ng-controller="returnController" id="questionQuote">
+<p> " {{displayAnswer}} "</p>
+<nav>
+   <a href="#/" id="questionNav">Ask Another Question</a>
+</nav>
+</div>
+
+<div id="answerQuote" ng-controller="answerController">
+	<p ng-model="randomAnswer" ng-init="init()"> {{randomAnswer}}</p>
+	<p> <button  id="happyButton" ng-click="again()"> Not Happy? Spin again.</button> </p>
+</div>
+
+</div>

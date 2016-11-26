@@ -4,7 +4,7 @@ app.controller('getController', ["$scope", "answerFactory", function($scope, ans
 
 	$scope.save = function(){
 		answerFactory.saveQuestion($scope.questionAsked);
-		// $location.path("views/madlibs.html")
+	
 		};
 
 }]);
