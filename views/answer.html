@@ -1,15 +1,23 @@
 <div id="answerPage">
 
-<div ng-controller="returnController" id="questionQuote">
+<div ng-controller="returnController" id="questionAskedColumn">
+<div id="questionDisplay">
 <p> " {{displayAnswer}} "</p>
 <nav>
-   <a href="#/" id="questionNav">Ask Another Question</a>
+   <a href="#/" id="askAgainButton">Ask Another Question</a>
 </nav>
 </div>
+</div>
 
-<div id="answerQuote" ng-controller="answerController">
+<div ng-controller="answerController"  id="answerColumn">
+
+<div id="answerContainer">
+	<img src="../8ball.svg"/>
+<div id="answer">
 	<p ng-model="randomAnswer" ng-init="init()"> {{randomAnswer}}</p>
-	<p> <button  id="happyButton" ng-click="again()"> Not Happy? Spin again.</button> </p>
+	<p> <button  id="notHappyButton" ng-click="again()"> Not Happy? Spin again.</button> </p>
+</div>
+
 </div>
 
 </div>
